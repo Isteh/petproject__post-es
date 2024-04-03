@@ -12,7 +12,7 @@ export default (env: BuildEnv) => {
     entry: path.resolve(
       __dirname,
       'src',
-      'index'
+      'index.tsx'
     ),
     html: path.resolve(
       __dirname,
