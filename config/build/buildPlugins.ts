@@ -10,6 +10,7 @@ export function buildPlugins(
   return [
     new HtmlWebpackPlugin({
       template: paths.html,
+      inject: true,
     }),
     new webpack.ProgressPlugin(),
   ];

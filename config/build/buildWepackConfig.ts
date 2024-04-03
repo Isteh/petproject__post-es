@@ -3,24 +3,30 @@ import { BuildOptions } from './types/config';
 import { buildLoaders } from './buildLoaders';
 import { buildResolvers } from './buildResolvers';
 import { buildPlugins } from './buildPlugins';
+import { buildDevServer } from './buildDevServer';
 
-export function buildWebpackConfig({
-  mode,
-  paths,
-  isDev,
-}: BuildOptions): Configuration {
+export function buildWebpackConfig(
+  options: BuildOptions
+): Configuration {
+  const { paths } = options;
   return {
-    mode,
+    mode: options.mode,
     entry: paths.entry,
-    module: {
-      rules: buildLoaders(),
-    },
-    resolve: buildResolvers(),
     output: {
-      filename: '[name].[contenthash].ts',
+      filename: '[name].[contenthash].js',
       path: paths.build,
       clean: true,
     },
+    module: {
+      rules: buildLoaders(),
+    },
     plugins: buildPlugins(paths),
+    resolve: buildResolvers(),
+    devtool: options.isDev
+      ? 'inline-source-map'
+      : undefined,
+    devServer: options.isDev
+      ? buildDevServer(options)
+      : undefined,
   };
 }
