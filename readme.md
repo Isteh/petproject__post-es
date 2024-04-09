@@ -14,4 +14,4 @@ Author Isteh
 
 1. Webpack assembly configuration
 2. Adding global styles and themes
-3. Implementation of the architecture of the FSD
+3. Implementation of FSD architecture
