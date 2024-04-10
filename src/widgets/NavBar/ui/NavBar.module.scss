@@ -1,0 +1,21 @@
+.nav {
+  display: flex;
+  width: 100%;
+  min-height: var(--navbar-height);
+  background-color: var(--bg-secondary-color);
+
+  padding: 0 var(--main-desktop-padding);
+}
+
+.links {
+  margin-left: auto;
+  display: flex;
+  margin-right: -15px;
+}
+
+.link {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
