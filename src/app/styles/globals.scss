@@ -11,3 +11,25 @@
 
   min-height: 100vh;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+* {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: var(--bg-primary-color) solid 2px;
+    outline-offset: 3px;
+  }
+}

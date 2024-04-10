@@ -1,0 +1,29 @@
+.button {
+  width: 80px;
+  height: 40px;
+  background-color: var(--bg-main-color);
+  border-radius: 20px;
+  border: none;
+
+  cursor: pointer;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--bg-secondary-color);
+    transform: translateX(5px);
+
+    transition: transform 0.3s;
+  }
+}
+
+.left {
+  &::after {
+    // width (80) - width after (30) - 'padding' 5
+    transform: translateX(45px);
+  }
+}

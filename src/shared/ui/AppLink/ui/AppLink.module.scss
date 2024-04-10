@@ -2,8 +2,22 @@
   color: var(--text-main-color);
   text-transform: capitalize;
   text-decoration: none;
+
+  &:hover {
+    opacity: var(--main-hover-opacity);
+  }
+  &:active {
+    opacity: var(--main-active-opacity);
+  }
 }
 
 .inverted {
-  color: var(--text-inverted-color);
+  color: var(--text-inverted-main-color);
+}
+.secondary {
+  color: var(--text-secondary-color);
+}
+.primary {
+  color: var(--bg-primary-color);
+  font-weight: 500;
 }
