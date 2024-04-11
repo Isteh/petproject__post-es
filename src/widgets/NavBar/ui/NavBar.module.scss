@@ -1,24 +1,33 @@
-.nav {
+.header {
   display: flex;
-  align-items: center;
 
   width: 100%;
-  min-height: var(--navbar-height);
+  height: var(--navbar-height);
   background-color: var(--bg-secondary-color);
 
   padding: 0 var(--main-desktop-padding);
 }
+.nav {
+  margin-left: auto;
+}
 
 .links {
-  margin-left: auto;
   display: flex;
+  height: 100%;
   margin-right: -15px;
 }
 
 .link {
   padding: 15px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
+}
+
+.logo {
+  height: 100%;
+  padding: 0 15px;
+  margin-left: -15px;
 }

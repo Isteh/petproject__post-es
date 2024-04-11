@@ -8,8 +8,8 @@ const AppLink: FC<IAppLinkProps> = ({ className, children, theme, ...props }) =>
     return <Link {...props}
         className={classNames(styles.link,
             {
-                [`${className}`]: className,
-                [`${styles[theme]}`]: theme
+                [className]: className,
+                [styles[theme]]: theme
             })}>
         {children}
     </Link>

@@ -11,8 +11,8 @@ const ThemeSwitcher: FC<IThemeSwitcherProps> = ({ className }) => {
     return <button
         title='change theme'
         className={classNames(styles.button, {
-            [`${className}`]: !!className,
-            [`${styles.left}`]: theme === APP_THEMES.LIGHT
+            [className]: className,
+            [styles.left]: theme === APP_THEMES.LIGHT
         })}
         onClick={toggleTheme}>
         <span className={GLOBAL_CSS_CLASSES.HIDDEN}>change theme</span>

@@ -4,19 +4,20 @@ import { classNames } from 'shared/lib/classNames'
 import styles from './NavBar.module.scss'
 import { AppRoutes, RoutePath } from 'shared/config/routeConfig'
 import { AppLink } from 'shared/ui/AppLink'
-import { ThemeSwitcher } from 'shared/ui/ThemeSwitcher'
+import { Logo } from 'shared/ui/Logo'
 
 const NavBar: FC<INavBarProps> = ({ className }) => {
-    return <nav
-        className={classNames(styles.nav, { className: !!className })}>
-        <ThemeSwitcher />
+    return <header className={classNames(styles.header, { [className]: className })}>
 
-        <ul className={styles.links}>
-            <li>
-                <AppLink to={RoutePath[AppRoutes.HOME]} className={styles.link}>{AppRoutes.HOME}</AppLink>
-            </li>
-        </ul>
-    </nav>
+        <Logo className={styles.logo} />
+        <nav className={styles.nav}>
+            <ul className={styles.links}>
+                <li>
+                    <AppLink to={RoutePath[AppRoutes.HOME]} className={styles.link}>{AppRoutes.HOME}</AppLink>
+                </li>
+            </ul>
+        </nav>
+    </header >
 }
 
 export default NavBar

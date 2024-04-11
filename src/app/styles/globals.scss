@@ -12,6 +12,21 @@
   min-height: 100vh;
 }
 
+.page-content {
+  display: flex;
+  min-height: var(--page-content-min-height);
+  width: 100%;
+  position: relative;
+
+  > aside {
+    flex-shrink: 0;
+  }
+
+  > main {
+    flex-grow: 1;
+  }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
