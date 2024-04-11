@@ -1,0 +1,35 @@
+.switcher {
+  display: flex;
+
+  & > li:not(:last-child) {
+    border-right: 1px solid var(--text-main-color);
+  }
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  color: var(--text-main-color);
+  &:hover {
+    opacity: var(--main-hover-opacity);
+  }
+  &:active {
+    opacity: var(--main-active-opacity);
+  }
+}
+
+.active {
+  color: var(--bg-primary-color);
+}
+
+.button,
+.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: var(--font-m);
+  min-width: 50px;
+  min-height: 30px;
+}

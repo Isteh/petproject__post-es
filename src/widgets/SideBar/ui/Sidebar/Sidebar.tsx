@@ -5,10 +5,13 @@ import { classNames } from 'shared/lib/classNames'
 import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses'
 import { Logo } from 'shared/ui/Logo'
 import SidebarContent from '../SidebarContent/SidebarContent'
+import { useTranslation } from 'react-i18next'
+import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize'
 
 const Sidebar: FC<ISidebarProps> = ({ className }) => {
     const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
     const [buttonShow, setButtonShow] = useState(false)
+    const { t } = useTranslation()
 
     return <aside
         className={classNames(styles.sidebar, {
@@ -21,7 +24,7 @@ const Sidebar: FC<ISidebarProps> = ({ className }) => {
         <button className={classNames(styles.toggler, {
             [styles.show]: buttonShow
         })}
-            title={`${sidebarCollapsed ? 'show' : 'hide'} sidebar`}
+            title={sidebarCollapsed ? t('show sidebar') : t('hide sidebar')}
             onClick={() => setSidebarCollapsed(prev => !prev)}
             // shows/hides the button in collapsed mode
             onMouseEnter={() => sidebarCollapsed && setButtonShow(true)}
@@ -30,10 +33,10 @@ const Sidebar: FC<ISidebarProps> = ({ className }) => {
 
             {sidebarCollapsed ?
                 <span className={GLOBAL_CSS_CLASSES.HIDDEN}>
-                    Show sidebar
+                    {t('show sidebar')}
                 </span>
                 :
-                'Hide sidebar'}
+                firstLetterCapitalize(t('hide sidebar'))}
 
         </button>
 
