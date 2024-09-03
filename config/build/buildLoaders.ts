@@ -23,7 +23,6 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
           },
         },
       },
-      ,
       'sass-loader',
     ],
   };

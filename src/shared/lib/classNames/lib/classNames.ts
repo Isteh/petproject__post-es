@@ -9,7 +9,7 @@ export function classNames(...clss: Array<Mods | string>): string {
         if (typeof cls === 'string') return cls;
         // else cls is Mods, then if value is true return key
         return Object.entries(cls)
-          .filter(([key, value]) => !!value)
+          .filter(([, value]) => !!value)
           .map(([key]) => key)
           .join(' ');
       }

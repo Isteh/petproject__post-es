@@ -16,7 +16,7 @@ const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({ className }) => {
             {i18n.language === item ?
                 <span className={styles.active}>{firstLetterCapitalize(item)}</span> :
                 <button className={styles.button}
-                    onClick={() => i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')}
+                    onClick={() => void i18n.changeLanguage(i18n.language === 'ru' ? 'en' : 'ru')}
                     title={t(['change language'])}
                 >{firstLetterCapitalize(item)}
                     <span className={GLOBAL_CSS_CLASSES.HIDDEN}>
