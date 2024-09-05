@@ -21,15 +21,18 @@
   background-color: var(--bg-iverted-main-color);
   color: var(--text-inverted-main-color);
 }
+
 .secondary {
   background-color: var(--bg-secondary-color);
 }
+
 .primary {
   background-color: var(--bg-primary-color);
   color: var(--text-primary-color);
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .border {
   background-color: transparent;
   border: 1px solid var(--bg-iverted-main-color);

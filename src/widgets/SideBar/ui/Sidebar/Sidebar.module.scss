@@ -17,51 +17,6 @@
   transition: width 0.2s ease-in-out, visibility 0.2s ease-in-out;
 
   // creates a small transparent stripe, when hovered over it a button appears
-  &.collapsed {
-    width: var(--sidebar-width-collapsed);
-    margin-top: 0;
-    height: 100%;
-    visibility: hidden;
-    position: absolute;
-
-    & > .content,
-    & > .logo {
-      display: none;
-    }
-
-    & > .toggler {
-      visibility: visible;
-      position: sticky;
-      top: 25vh;
-      left: 0;
-      background-color: transparent;
-
-      height: 100%;
-
-      &.show::after {
-        transform: translateX(20px);
-      }
-
-      &:hover {
-        opacity: var(--main-hover-opacity);
-      }
-
-      &::after {
-        content: '<';
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        border: 1px solid var(--bg-inverted-secondary-color);
-        color: var(--bg-inverted-secondary-color);
-
-        transform: translateX(-50px);
-        transition: transform 0.2s;
-      }
-    }
-  }
 }
 
 .content {
@@ -99,4 +54,50 @@
   min-height: var(--navbar-height);
   padding-left: var(--main-desktop-padding);
   text-wrap: nowrap;
+}
+
+.sidebar.collapsed {
+  width: var(--sidebar-width-collapsed);
+  margin-top: 0;
+  height: 100%;
+  visibility: hidden;
+  position: absolute;
+
+  & > .content,
+  & > .logo {
+    display: none;
+  }
+
+  & > .toggler {
+    visibility: visible;
+    position: sticky;
+    top: 25vh;
+    left: 0;
+    background-color: transparent;
+
+    height: 100%;
+
+    &.show::after {
+      transform: translateX(20px);
+    }
+
+    &:hover {
+      opacity: var(--main-hover-opacity);
+    }
+
+    &::after {
+      content: '<';
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--bg-inverted-secondary-color);
+      color: var(--bg-inverted-secondary-color);
+
+      transform: translateX(-50px);
+      transition: transform 0.2s;
+    }
+  }
 }
