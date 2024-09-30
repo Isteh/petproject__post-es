@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 /* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import globals from 'globals';
-import pluginReactConfig from 'eslint-plugin-react';
+import react from 'eslint-plugin-react';
+import jest from 'eslint-plugin-jest';
 import i18next from 'eslint-plugin-i18next';
 
 import path from 'path';
@@ -19,12 +20,13 @@ const __dirname = path.dirname(__filename);
 // });
 
 export default [
-  pluginReactConfig.configs.flat.recommended,
-  pluginReactConfig.configs.flat['jsx-runtime'],
+  react.configs.flat.recommended,
+  react.configs.flat['jsx-runtime'],
   {
-    plugins: { i18next },
+    plugins: { i18next, jest },
     rules: {
       'i18next/no-literal-string': ['error', { mode: 'jsx-text-only' }],
+      ...jest.configs.recommended.rules,
     },
   },
   // ...compat.extends('standard-with-typescript'),
@@ -32,7 +34,7 @@ export default [
   ...tseslint.configs.recommendedTypeChecked,
   {
     languageOptions: {
-      globals: globals.browser,
+      globals: { ...globals.browser, ...globals.jest },
       parserOptions: { project: './tsconfig.json', tsconfigRootDir: __dirname },
     },
   },

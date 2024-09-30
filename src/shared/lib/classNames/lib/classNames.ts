@@ -15,5 +15,6 @@ export function classNames(...clss: Array<Mods | string>): string {
       }
       return '';
     })
+    .filter((value) => !!value)
     .join(' ');
 }
