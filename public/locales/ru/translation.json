@@ -4,5 +4,7 @@
   "light theme": "светлая тема",
   "dark theme": "темная тема",
   "change theme": "поменять тему",
-  "change language": "поменять язык"
+  "change language": "поменять язык",
+  "page not found": "страница не найдена",
+  "loading": "загрузка"
 }

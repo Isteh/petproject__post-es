@@ -4,5 +4,7 @@
   "light theme": "light theme",
   "dark theme": "dark theme",
   "change theme": "change theme",
-  "change language": "change language"
+  "change language": "change language",
+  "page not found": "page not found",
+  "loading": "loading"
 }

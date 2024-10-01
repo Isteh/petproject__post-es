@@ -1,5 +1,7 @@
 {
   "change theme": "change theme",
   "hide sidebar": "hide sidebar",
+  "loading": "loading",
+  "page not found": "page not found",
   "show sidebar": "show sidebar"
 }
