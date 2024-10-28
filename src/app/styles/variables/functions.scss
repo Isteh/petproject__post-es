@@ -1,0 +1,9 @@
+$html-main-desktop-font-size: 16;
+
+@function rem($value, $delimeter: $html-main-desktop-font-size) {
+  @return calc($value / $delimeter) * 1rem;
+}
+
+@function em($value, $delimeter: $html-main-desktop-font-size) {
+  @return calc($value / $delimeter) * 1em;
+}

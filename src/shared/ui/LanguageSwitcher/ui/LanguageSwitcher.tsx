@@ -1,12 +1,12 @@
-import { FC } from 'react'
-import styles from './LanguageSwitcher.module.scss'
-import { ILanguageSwitcherProps } from './LanguageSwitcher.interface'
-import { classNames } from 'shared/lib/classNames'
-import { useTranslation } from 'react-i18next'
-import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize'
-import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses'
+import { FC } from 'react';
+import styles from './LanguageSwitcher.module.scss';
+import { ILanguageSwitcherProps } from './LanguageSwitcher.interface';
+import { classNames } from 'shared/lib/classNames';
+import { useTranslation } from 'react-i18next';
+import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
+import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses';
 
-const locales = ['ru', 'en']
+const locales = ['ru', 'en'];
 
 const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({ className }) => {
     const { t, i18n } = useTranslation();
@@ -23,7 +23,7 @@ const LanguageSwitcher: FC<ILanguageSwitcherProps> = ({ className }) => {
                         {t(['change language'])}
                     </span></button>}
         </li>)}
-    </ol>
-}
+    </ol>;
+};
 
-export default LanguageSwitcher
+export default LanguageSwitcher;

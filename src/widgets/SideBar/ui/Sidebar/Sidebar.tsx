@@ -1,17 +1,17 @@
-import { FC, useState } from 'react'
-import styles from './Sidebar.module.scss'
-import { ISidebarProps } from './Sidebar.interface'
-import { classNames } from 'shared/lib/classNames'
-import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses'
-import { Logo } from 'shared/ui/Logo'
-import SidebarContent from '../SidebarContent/SidebarContent'
-import { useTranslation } from 'react-i18next'
-import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize'
+import { FC, useState } from 'react';
+import styles from './Sidebar.module.scss';
+import { ISidebarProps } from './Sidebar.interface';
+import { classNames } from 'shared/lib/classNames';
+import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses';
+import { Logo } from 'shared/ui/Logo';
+import SidebarContent from '../SidebarContent/SidebarContent';
+import { useTranslation } from 'react-i18next';
+import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
 
 const Sidebar: FC<ISidebarProps> = ({ className }) => {
-    const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
-    const [buttonShow, setButtonShow] = useState(false)
-    const { t } = useTranslation()
+    const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+    const [buttonShow, setButtonShow] = useState(false);
+    const { t } = useTranslation();
 
     return <aside
         className={classNames(styles.sidebar, {
@@ -44,9 +44,9 @@ const Sidebar: FC<ISidebarProps> = ({ className }) => {
             <SidebarContent />
         </div>
 
-    </aside>
+    </aside>;
 
 
-}
+};
 
-export default Sidebar
+export default Sidebar;

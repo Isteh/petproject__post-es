@@ -1,34 +1,62 @@
 :root {
   --font-family-main: 'Montserrat', sans-serif;
 
-  --font-size-s: 12px;
-  --font-line-s: 20px;
+  --linear-func-font-resize: 0px;
+
+  --font-size-s: calc(0.75rem + var(--linear-func-font-resize));
+  --font-line-s: 1.25em;
   --font-s: var(--font-size-s) / var(--font-line-s) var(--font-family-main);
 
-  --font-size-sm: 14px;
-  --font-line-sm: 18px;
+  --font-size-sm: calc(0.875rem + var(--linear-func-font-resize));
+  --font-line-sm: 1.25em;
   --font-sm: var(--font-size-sm) / var(--font-line-sm) var(--font-family-main);
 
-  --font-size-m: 16px;
-  --font-line-m: 24px;
+  --font-size-m: calc(1rem + var(--linear-func-font-resize));
+  --font-line-m: 1.25em;
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
 
-  --font-size-l: 24px;
-  --font-line-l: 32px;
+  --font-size-l: calc(1.5rem + var(--linear-func-font-resize));
+  --font-line-l: 1.5em;
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
-  // Sizes
-  --navbar-height: 60px;
+  --font-size-xl: calc(2rem + var(--linear-func-font-resize));
+  --font-line-xl: 1.5em;
+  --font-xl: var(--font-size-xl) / var(--font-line-xl) var(--font-family-main);
 
-  --sidebar-width: 200px;
-  --sidebar-width-collapsed: 50px;
+  // Sizes
+  --navbar-height: 3.75rem;
+
+  --sidebar-width: 12.5rem;
+  --sidebar-width-collapsed: 3.125rem;
 
   --page-content-min-height: calc(100vh - var(--navbar-height));
 
   // Paddings / Margins
-  --main-desktop-padding: 50px;
+  --main-desktop-padding: 3.125rem;
 
   // hover
   --main-hover-opacity: 0.7;
   --main-active-opacity: 0.5;
+
+  @media (min-width: $mobile-size-optimum) {
+    --linear-func-font-resize: calc(0.3125vw - 1px);
+  }
+
+  @media (min-width: $tabletop-size-optimum) {
+    --linear-func-font-resize: calc(0.2083vw - 2px);
+    --font-size-s: calc(0.875rem + var(--linear-func-font-resize));
+    --font-size-sm: calc(1rem + var(--linear-func-font-resize));
+    --font-size-m: calc(1.125rem + var(--linear-func-font-resize));
+    --font-size-l: calc(1.625rem + var(--linear-func-font-resize));
+    --font-size-xl: calc(2.125rem + var(--linear-func-font-resize));
+  }
+
+  @media (min-width: calc($desktop-size-optimum + 1px)) {
+    --linear-func-font-resize: calc(0.5208vw - 10px);
+    --font-size-s: calc(1rem + var(--linear-func-font-resize));
+    --font-size-sm: calc(1.125rem + var(--linear-func-font-resize));
+    --font-size-m: calc(1.25rem + var(--linear-func-font-resize));
+    --font-size-l: calc(1.75rem + var(--linear-func-font-resize));
+    --font-size-xl: calc(2.25rem + var(--linear-func-font-resize));
+  }
 }

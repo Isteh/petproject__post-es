@@ -1,8 +1,8 @@
 .button {
-  width: 80px;
-  height: 40px;
+  width: rem(80);
+  height: rem(40);
   background-color: var(--bg-main-color);
-  border-radius: 20px;
+  border-radius: rem(20);
   border: none;
 
   cursor: pointer;
@@ -11,11 +11,11 @@
   &::after {
     content: '';
     display: block;
-    width: 30px;
-    height: 30px;
+    width: rem(30);
+    height: rem(30);
     border-radius: 50%;
     background-color: var(--bg-secondary-color);
-    transform: translateX(5px);
+    transform: translateX(rem(5));
 
     transition: transform 0.3s;
   }
@@ -24,6 +24,6 @@
 .left {
   &::after {
     // width (80) - width after (30) - 'padding' 5
-    transform: translateX(45px);
+    transform: translateX(rem(45));
   }
 }

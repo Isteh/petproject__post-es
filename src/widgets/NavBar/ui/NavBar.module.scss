@@ -15,20 +15,20 @@
 .links {
   display: flex;
   height: 100%;
-  margin-right: -15px;
+  margin-right: rem(-15);
 }
 
 .link {
-  padding: 15px;
+  padding: rem(15);
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: rem(5);
 }
 
 .logo {
   height: 100%;
-  padding: 0 15px;
-  margin-left: -15px;
+  padding: 0 rem(15);
+  margin-left: rem(-15);
 }

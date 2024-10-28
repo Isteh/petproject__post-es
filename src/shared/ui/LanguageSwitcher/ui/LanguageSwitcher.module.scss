@@ -12,8 +12,8 @@
   align-items: center;
   justify-content: center;
   font: var(--font-m);
-  min-width: 50px;
-  min-height: 30px;
+  min-width: rem(50);
+  min-height: rem(30);
 }
 
 .button {

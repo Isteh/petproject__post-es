@@ -6,5 +6,7 @@
   "change theme": "поменять тему",
   "change language": "поменять язык",
   "page not found": "страница не найдена",
-  "loading": "загрузка"
+  "loading": "загрузка",
+  "something went wrong": "что-то пошло не так",
+  "refresh page": "обновить страницу"
 }

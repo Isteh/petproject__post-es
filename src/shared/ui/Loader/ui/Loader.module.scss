@@ -1,5 +1,5 @@
 .loader {
-  width: 65px;
+  width: rem(65);
   aspect-ratio: 1;
   position: relative;
 }
@@ -8,7 +8,7 @@
 .loader::after {
   content: '';
   position: absolute;
-  border-radius: 50px;
+  border-radius: rem(50);
   box-shadow: 0 0 0 3px inset var(--bg-secondary-color);
   animation: l5 2.5s infinite;
 }
@@ -20,38 +20,38 @@
 
 @keyframes l5 {
   0% {
-    inset: 0 35px 35px 0;
+    inset: 0 rem(35) rem(35) 0;
   }
 
   12.5% {
-    inset: 0 35px 0 0;
+    inset: 0 rem(35) 0 0;
   }
 
   25% {
-    inset: 35px 35px 0 0;
+    inset: rem(35) rem(35) 0 0;
   }
 
   37.5% {
-    inset: 35px 0 0;
+    inset: rem(35) 0 0;
   }
 
   50% {
-    inset: 35px 0 0 35px;
+    inset: rem(35) 0 0 rem(35);
   }
 
   62.5% {
-    inset: 0 0 0 35px;
+    inset: 0 0 0 rem(35);
   }
 
   75% {
-    inset: 0 0 35px 35px;
+    inset: 0 0 rem(35) rem(35);
   }
 
   87.5% {
-    inset: 0 0 35px;
+    inset: 0 0 rem(35);
   }
 
   100% {
-    inset: 0 35px 35px 0;
+    inset: 0 rem(35) rem(35) 0;
   }
 }

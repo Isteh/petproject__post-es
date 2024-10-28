@@ -21,4 +21,4 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
     path: RoutePath.not_found,
     element: <NotFound />
   },
-}
+};

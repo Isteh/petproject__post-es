@@ -37,5 +37,9 @@ export default [
       globals: { ...globals.browser, ...globals.jest },
       parserOptions: { project: './tsconfig.json', tsconfigRootDir: __dirname },
     },
+    rules: {
+      'react/prop-types': 0,
+      semi: 2,
+    },
   },
 ];

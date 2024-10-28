@@ -1,0 +1,25 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--bg-main-color);
+  color: var(--text-main-color);
+}
+
+.message {
+  font: var(--font-l);
+  margin-bottom: rem(20);
+}
+
+.button {
+  font: var(--font-m);
+  background-color: var(--bg-primary-color);
+  color: var(--text-primary-color);
+
+  width: 40%;
+}

@@ -1,7 +1,7 @@
-import { FC } from 'react'
-import styles from './Button.module.scss'
-import { IButtonProps } from './Button.interface'
-import { classNames } from 'shared/lib/classNames'
+import { FC } from 'react';
+import styles from './Button.module.scss';
+import { IButtonProps } from './Button.interface';
+import { classNames } from 'shared/lib/classNames';
 
 const Button: FC<IButtonProps> = ({ className, children, theme, ...props }) => {
     return <button
@@ -11,7 +11,7 @@ const Button: FC<IButtonProps> = ({ className, children, theme, ...props }) => {
             [styles[theme]]: theme
         })}>
         {children}
-    </button>
-}
+    </button>;
+};
 
-export default Button
+export default Button;

@@ -6,5 +6,7 @@
   "change theme": "change theme",
   "change language": "change language",
   "page not found": "page not found",
-  "loading": "loading"
+  "loading": "loading",
+  "something went wrong": "something went wrong",
+  "refresh page": "refresh page"
 }

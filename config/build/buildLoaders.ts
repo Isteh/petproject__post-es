@@ -23,7 +23,25 @@ export function buildLoaders(options: BuildOptions): RuleSetRule[] {
           },
         },
       },
-      'sass-loader',
+      {
+        loader: 'sass-loader',
+        options: {
+          additionalData: (
+            content: string
+            // loaderContext: { rootContext: string }
+          ) => {
+            // const { rootContext } = loaderContext;
+            const relativeSassFuncPath =
+              './src/app/styles/variables/functions.scss';
+            const relativeSassMediaPath =
+              './src/app/styles/variables/media-points.scss';
+            const str = `@import '${relativeSassFuncPath}';
+            @import '${relativeSassMediaPath}';`;
+
+            return str + content;
+          },
+        },
+      },
     ],
   };
 

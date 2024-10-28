@@ -14,7 +14,9 @@
   flex-direction: column;
   width: var(--sidebar-width);
 
-  transition: width 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  transition:
+    width 0.2s ease-in-out,
+    visibility 0.2s ease-in-out;
 
   // creates a small transparent stripe, when hovered over it a button appears
 }
@@ -25,14 +27,14 @@
 
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: rem(10);
 }
 
 .toggler {
   text-wrap: nowrap;
   position: relative;
   width: 100%;
-  min-height: 30px;
+  min-height: rem(30);
   cursor: pointer;
   color: var(--text-main-color);
   background-color: transparent;
@@ -78,7 +80,7 @@
     height: 100%;
 
     &.show::after {
-      transform: translateX(20px);
+      transform: translateX(rem(20));
     }
 
     &:hover {
@@ -90,13 +92,13 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 30px;
-      height: 30px;
+      width: rem(30);
+      height: rem(30);
       border-radius: 50%;
       border: 1px solid var(--bg-inverted-secondary-color);
       color: var(--bg-inverted-secondary-color);
 
-      transform: translateX(-50px);
+      transform: translateX(rem(-50));
       transition: transform 0.2s;
     }
   }
