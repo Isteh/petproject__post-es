@@ -47,4 +47,7 @@ describe('classNames', () => {
       )
     ).toBe('someClass anotherClass lastClass');
   });
+  test('undefined', () => {
+    expect(classNames('someClass', undefined)).toBe('someClass');
+  });
 });

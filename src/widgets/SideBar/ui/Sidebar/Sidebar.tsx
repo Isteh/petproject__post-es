@@ -9,44 +9,43 @@ import { useTranslation } from 'react-i18next';
 import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
 
 const Sidebar: FC<ISidebarProps> = ({ className }) => {
-    const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-    const [buttonShow, setButtonShow] = useState(false);
-    const { t } = useTranslation();
+  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
+  const [buttonShow, setButtonShow] = useState(false);
+  const { t } = useTranslation();
 
-    return <aside
-        className={classNames(styles.sidebar, {
-            [className]: className,
-            [styles.collapsed]: sidebarCollapsed
-        })}
+  return (
+    <aside
+      data-testid="sidebar"
+      className={classNames(styles.sidebar, {
+        [className]: className,
+        [styles.collapsed]: sidebarCollapsed,
+      })}
     >
-        <Logo className={styles.logo} />
+      <Logo className={styles.logo} />
 
-        <button className={classNames(styles.toggler, {
-            [styles.show]: buttonShow
+      <button
+        data-testid="sidebar--toggler"
+        className={classNames(styles.toggler, {
+          [styles.show]: buttonShow,
         })}
-            title={sidebarCollapsed ? t('show sidebar') : t('hide sidebar')}
-            onClick={() => setSidebarCollapsed(prev => !prev)}
-            // shows/hides the button in collapsed mode
-            onMouseEnter={() => sidebarCollapsed && setButtonShow(true)}
-            onMouseLeave={() => sidebarCollapsed && setButtonShow(false)}
-        >
+        title={sidebarCollapsed ? t('show sidebar') : t('hide sidebar')}
+        onClick={() => setSidebarCollapsed((prev) => !prev)}
+        // shows/hides the button in collapsed mode
+        onMouseEnter={() => sidebarCollapsed && setButtonShow(true)}
+        onMouseLeave={() => sidebarCollapsed && setButtonShow(false)}
+      >
+        {sidebarCollapsed ? (
+          <span className={GLOBAL_CSS_CLASSES.HIDDEN}>{t('show sidebar')}</span>
+        ) : (
+          firstLetterCapitalize(t('hide sidebar'))
+        )}
+      </button>
 
-            {sidebarCollapsed ?
-                <span className={GLOBAL_CSS_CLASSES.HIDDEN}>
-                    {t('show sidebar')}
-                </span>
-                :
-                firstLetterCapitalize(t('hide sidebar'))}
-
-        </button>
-
-        <div className={styles.content}>
-            <SidebarContent />
-        </div>
-
-    </aside>;
-
-
+      <div className={styles.content}>
+        <SidebarContent />
+      </div>
+    </aside>
+  );
 };
 
 export default Sidebar;
