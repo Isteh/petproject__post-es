@@ -25,7 +25,6 @@ export default [
   {
     plugins: { i18next, jest },
     rules: {
-      'i18next/no-literal-string': ['error', { mode: 'jsx-text-only' }],
       ...jest.configs.recommended.rules,
     },
   },
@@ -40,6 +39,13 @@ export default [
     rules: {
       'react/prop-types': 0,
       semi: 2,
+    },
+  },
+  {
+    files: ['**/src/**/*.(ts,tsx)'],
+    ignores: ['**/src/**/*.test.(ts,tsx)'],
+    rules: {
+      'i18next/no-literal-string': ['error', { mode: 'jsx-text-only' }],
     },
   },
 ];
