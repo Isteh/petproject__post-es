@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
 import { Button } from 'shared/ui/Button';
-import styles from './pageError.module.scss';
+import styles from './PageError.module.scss';
 
 const PageError: FC = () => {
   const { t } = useTranslation();

@@ -1,12 +1,12 @@
 .sidebar {
   // make the sidebar non-movable across the entire page
-  height: 100vh;
-  top: 0;
-  position: sticky;
 
-  // necessary for correct placement of the logo
+  top: 0;
   margin-top: calc(-1 * var(--navbar-height));
-  z-index: 1;
+  position: sticky;
+  height: 100vh;
+
+  z-index: 0;
 
   background-color: var(--bg-secondary-color);
 
@@ -23,14 +23,19 @@
 
 .content {
   order: 1;
-  height: 100%;
+  flex-grow: 1;
 
   display: flex;
   flex-direction: column;
   padding: rem(10);
+
+  visibility: visible;
+  transition: visibility 0.2s ease-in-out;
 }
 
 .toggler {
+  margin-top: var(--navbar-height);
+
   text-wrap: nowrap;
   position: relative;
   width: 100%;
@@ -41,6 +46,7 @@
   font: var(--font-sm);
 
   border: none;
+  transition: margin 0.1s ease-in-out;
 
   &:hover {
     background-color: var(--bg-inverted-secondary-color);
@@ -52,10 +58,8 @@
   }
 }
 
-.logo {
-  min-height: var(--navbar-height);
-  padding-left: var(--main-desktop-padding);
-  text-wrap: nowrap;
+.toggler.topLocation {
+  margin-top: rem(20);
 }
 
 .sidebar.collapsed {
@@ -65,15 +69,14 @@
   visibility: hidden;
   position: absolute;
 
-  & > .content,
-  & > .logo {
-    display: none;
+  & > .content {
+    visibility: hidden;
   }
 
   & > .toggler {
+    margin: 0;
     visibility: visible;
     position: sticky;
-    top: 25vh;
     left: 0;
     background-color: transparent;
 
@@ -81,10 +84,6 @@
 
     &.show::after {
       transform: translateX(rem(20));
-    }
-
-    &:hover {
-      opacity: var(--main-hover-opacity);
     }
 
     &::after {
@@ -95,8 +94,9 @@
       width: rem(30);
       height: rem(30);
       border-radius: 50%;
-      border: 1px solid var(--bg-inverted-secondary-color);
-      color: var(--bg-inverted-secondary-color);
+      border: 1px solid var(--bg-iverted-main-color);
+      color: var(--bg-iverted-main-color);
+      background-color: var(--bg-secondary-color);
 
       transform: translateX(rem(-50));
       transition: transform 0.2s;

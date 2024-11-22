@@ -1,7 +1,8 @@
 import { FC } from 'react';
+import { PageWrapper } from 'shared/ui/PageWrapper';
 
 const Home: FC = () => {
-  return <main>Home </main>;
+  return <PageWrapper>Home </PageWrapper>;
 };
 
 export default Home;

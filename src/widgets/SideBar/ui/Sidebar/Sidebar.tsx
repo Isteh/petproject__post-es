@@ -1,17 +1,33 @@
-import { FC, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import styles from './Sidebar.module.scss';
 import { ISidebarProps } from './Sidebar.interface';
 import { classNames } from 'shared/lib/classNames';
 import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses';
-import { Logo } from 'shared/ui/Logo';
 import SidebarContent from '../SidebarContent/SidebarContent';
 import { useTranslation } from 'react-i18next';
 import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
+import { GLOBAL_CSS_VARIABLES } from 'app/styles/globalCssVariables';
 
 const Sidebar: FC<ISidebarProps> = ({ className }) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [buttonShow, setButtonShow] = useState(false);
+  const [isTopOfPage, setisTopOfPage] = useState(true);
   const { t } = useTranslation();
+  useEffect(() => {
+    const scrollSidebarContentHandler = () => {
+      if (window.scrollY > GLOBAL_CSS_VARIABLES.NAVBAR_HEIGHT) {
+        setisTopOfPage(false);
+      } else {
+        setisTopOfPage(true);
+      }
+    };
+    window.removeEventListener('scroll', scrollSidebarContentHandler);
+    window.addEventListener('scroll', scrollSidebarContentHandler, {
+      passive: true,
+    });
+    return () =>
+      window.removeEventListener('scroll', scrollSidebarContentHandler);
+  }, []);
 
   return (
     <aside
@@ -21,12 +37,11 @@ const Sidebar: FC<ISidebarProps> = ({ className }) => {
         [styles.collapsed]: sidebarCollapsed,
       })}
     >
-      <Logo className={styles.logo} />
-
       <button
         data-testid="sidebar--toggler"
         className={classNames(styles.toggler, {
           [styles.show]: buttonShow,
+          [styles.topLocation]: !isTopOfPage,
         })}
         title={sidebarCollapsed ? t('show sidebar') : t('hide sidebar')}
         onClick={() => setSidebarCollapsed((prev) => !prev)}

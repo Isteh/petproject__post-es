@@ -6,6 +6,8 @@
   background-color: var(--bg-secondary-color);
 
   padding: 0 var(--main-desktop-padding);
+  position: relative;
+  z-index: 2;
 }
 
 .nav {
