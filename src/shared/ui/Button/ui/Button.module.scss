@@ -1,11 +1,6 @@
 .button {
-  background-color: var(--bg-main-color);
-  color: var(--text-main-color);
   cursor: pointer;
   border: none;
-  padding: rem(10) rem(20);
-  border-radius: rem(20);
-  width: 100%;
 
   &:hover {
     transition: background-color 0.1s;
@@ -15,6 +10,11 @@
   &:active {
     opacity: var(--main-active-opacity);
   }
+}
+
+.normal {
+  background-color: var(--bg-main-color);
+  color: var(--text-main-color);
 }
 
 .invert {
@@ -36,4 +36,24 @@
 .border {
   background-color: transparent;
   border: 1px solid var(--bg-iverted-main-color);
+}
+
+.normal_size {
+  padding: rem(10) rem(20);
+  font-size: var(--font-size-m);
+
+  border-radius: rem(30);
+}
+
+.small_size {
+  padding: rem(6) rem(14);
+  font-size: var(--font-size-s);
+
+  border-radius: rem(20);
+}
+
+.big_size {
+  padding: rem(15) rem(40);
+  font-size: var(--font-size-m);
+  border-radius: rem(40);
 }
