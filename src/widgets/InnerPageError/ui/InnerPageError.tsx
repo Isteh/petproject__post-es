@@ -2,7 +2,8 @@ import { FC } from 'react';
 import { useTranslation } from 'react-i18next';
 import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
 import { Button } from 'shared/ui/Button';
-import styles from './PageError.module.scss';
+import styles from './InnerPageError.module.scss';
+import { BUTTON_SIZES } from 'shared/ui/Button/ui/Button.interface';
 
 const PageError: FC = () => {
   const { t } = useTranslation();
@@ -14,7 +15,11 @@ const PageError: FC = () => {
       <p className={styles.message}>
         {firstLetterCapitalize(t('something went wrong'))}!
       </p>
-      <Button onClick={reloadPage} className={styles.button}>
+      <Button
+        onClick={reloadPage}
+        className={styles.button}
+        size={BUTTON_SIZES.BIG}
+      >
         {firstLetterCapitalize(t('refresh page'))}
       </Button>
     </div>

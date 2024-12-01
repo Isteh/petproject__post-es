@@ -14,7 +14,7 @@ const App: FC = () => {
     <div className={classNames('app', theme)}>
       {/* suspense for i18n */}
       <Suspense fallback={<Loader />}>
-        <ErrorBoundary>
+        <ErrorBoundary inner>
           <NavBar />
 
           <div className="page-content">

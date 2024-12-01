@@ -1,9 +1,10 @@
-import { PageError } from 'widgets/PageError';
+import { InnerPageError } from 'widgets/InnerPageError';
 import {
   IErrorBoundaryProps,
   IErrorBoundaryState,
 } from './ErrorBoundary.interface';
 import React, { ErrorInfo, Suspense } from 'react';
+import { OuterPageError } from 'widgets/OuterPageError';
 
 class ErrorBoundary extends React.Component<
   IErrorBoundaryProps,
@@ -23,11 +24,11 @@ class ErrorBoundary extends React.Component<
   }
   render() {
     const { hasError } = this.state;
-    const { children } = this.props;
+    const { children, inner } = this.props;
     if (hasError) {
       return (
         <Suspense fallback="">
-          <PageError />
+          {inner ? <InnerPageError /> : <OuterPageError />}
         </Suspense>
       );
     }

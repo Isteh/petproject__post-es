@@ -1,11 +1,11 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import PageError from './PageError';
+import InnerPageError from './InnerPageError';
 
 const meta = {
-  title: 'widgets/PageError',
-  component: PageError,
-} satisfies Meta<typeof PageError>;
+  title: 'widgets/InnerPageError',
+  component: InnerPageError,
+} satisfies Meta<typeof InnerPageError>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
