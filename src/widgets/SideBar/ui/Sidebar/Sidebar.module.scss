@@ -14,9 +14,7 @@
   flex-direction: column;
   width: var(--sidebar-width);
 
-  transition:
-    width 0.2s ease-in-out,
-    visibility 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
 
   // creates a small transparent stripe, when hovered over it a button appears
 }
@@ -28,9 +26,6 @@
   display: flex;
   flex-direction: column;
   padding: rem(10);
-
-  visibility: visible;
-  transition: visibility 0.2s ease-in-out;
 }
 
 .toggler {
@@ -62,44 +57,53 @@
   margin-top: rem(20);
 }
 
+// .sidebar.collapsed {
+//   width: var(--sidebar-width-collapsed);
+//   margin-top: 0;
+//   height: 100%;
+//   visibility: hidden;
+//   position: absolute;
+
+//   & > .content {
+//     visibility: hidden;
+//   }
+
+//   & > .toggler {
+//     margin: 0;
+//     visibility: visible;
+//     position: sticky;
+//     left: 0;
+//     background-color: transparent;
+
+//     height: 100%;
+
+//     &.show::after {
+//       transform: translateX(rem(20));
+//     }
+
+//     &::after {
+//       content: '<';
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: rem(30);
+//       height: rem(30);
+//       border-radius: 50%;
+//       border: 1px solid var(--bg-iverted-main-color);
+//       color: var(--bg-iverted-main-color);
+//       background-color: var(--bg-secondary-color);
+
+//       transform: translateX(rem(-50));
+//       transition: transform 0.2s;
+//     }
+//   }
+// }
+
 .sidebar.collapsed {
   width: var(--sidebar-width-collapsed);
-  margin-top: 0;
-  height: 100%;
-  visibility: hidden;
-  position: absolute;
 
-  & > .content {
-    visibility: hidden;
-  }
-
-  & > .toggler {
-    margin: 0;
-    visibility: visible;
-    position: sticky;
-    left: 0;
-    background-color: transparent;
-
-    height: 100%;
-
-    &.show::after {
-      transform: translateX(rem(20));
-    }
-
-    &::after {
-      content: '<';
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: rem(30);
-      height: rem(30);
-      border-radius: 50%;
-      border: 1px solid var(--bg-iverted-main-color);
-      color: var(--bg-iverted-main-color);
-      background-color: var(--bg-secondary-color);
-
-      transform: translateX(rem(-50));
-      transition: transform 0.2s;
-    }
+  & .content {
+    padding: rem(10) 0;
+    overflow: hidden;
   }
 }

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731593325686" clover="3.2.0">
-  <project timestamp="1731593325686" name="All files">
-    <metrics statements="54" coveredstatements="42" conditionals="20" coveredconditionals="11" methods="24" coveredmethods="16" elements="98" coveredelements="69" complexity="0" loc="54" ncloc="54" packages="26" files="27" classes="27"/>
+<coverage generated="1737981764300" clover="3.2.0">
+  <project timestamp="1737981764300" name="All files">
+    <metrics statements="59" coveredstatements="47" conditionals="28" coveredconditionals="16" methods="25" coveredmethods="18" elements="112" coveredelements="81" complexity="0" loc="59" ncloc="59" packages="21" files="24" classes="24"/>
     <package name="app.providers.ThemeProvider">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\app\providers\ThemeProvider\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\app\providers\ThemeProvider\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="app.providers.ThemeProvider.lib">
       <metrics statements="8" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
-      <file name="ThemeContext.ts" path="E:\projects\pp\post-es\src\app\providers\ThemeProvider\lib\ThemeContext.ts">
+      <file name="ThemeContext.ts" path="D:\projects\pp\post-es\src\app\providers\ThemeProvider\lib\ThemeContext.ts">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="13" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
       </file>
-      <file name="useTheme.ts" path="E:\projects\pp\post-es\src\app\providers\ThemeProvider\lib\useTheme.ts">
+      <file name="useTheme.ts" path="D:\projects\pp\post-es\src\app\providers\ThemeProvider\lib\useTheme.ts">
         <metrics statements="6" coveredstatements="3" conditionals="2" coveredconditionals="0" methods="2" coveredmethods="1"/>
         <line num="10" count="10" type="stmt"/>
         <line num="12" count="10" type="stmt"/>
@@ -27,7 +27,7 @@
     </package>
     <package name="app.providers.ThemeProvider.ui">
       <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
-      <file name="ThemeProvider.tsx" path="E:\projects\pp\post-es\src\app\providers\ThemeProvider\ui\ThemeProvider.tsx">
+      <file name="ThemeProvider.tsx" path="D:\projects\pp\post-es\src\app\providers\ThemeProvider\ui\ThemeProvider.tsx">
         <metrics statements="5" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="0"/>
         <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
         <line num="6" count="1" type="stmt"/>
@@ -37,182 +37,163 @@
       </file>
     </package>
     <package name="app.styles">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="globalClasses.ts" path="E:\projects\pp\post-es\src\app\styles\globalClasses.ts">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="globalClasses.ts" path="D:\projects\pp\post-es\src\app\styles\globalClasses.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
-    </package>
-    <package name="pages.Home">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\pages\Home\index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="pages.Home.ui">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="Home.async.tsx" path="E:\projects\pp\post-es\src\pages\Home\ui\Home.async.tsx">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="3" count="1" type="stmt"/>
-      </file>
-    </package>
-    <package name="pages.NotFound">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\pages\NotFound\index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="pages.NotFound.ui">
-      <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="NotFound.tsx" path="E:\projects\pp\post-es\src\pages\NotFound\ui\NotFound.tsx">
-        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
+      <file name="globalCssVariables.ts" path="D:\projects\pp\post-es\src\app\styles\globalCssVariables.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
       </file>
     </package>
     <package name="shared.config.i18nForTests">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\config\i18nForTests\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\config\i18nForTests\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.config.i18nForTests.lib">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="i18nForTests.ts" path="E:\projects\pp\post-es\src\shared\config\i18nForTests\lib\i18nForTests.ts">
+      <file name="i18nForTests.ts" path="D:\projects\pp\post-es\src\shared\config\i18nForTests\lib\i18nForTests.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
     </package>
-    <package name="shared.config.routeConfig">
+    <package name="shared.config.locales">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\config\routeConfig\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\config\locales\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
-    <package name="shared.config.routeConfig.lib">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="routeConfig.tsx" path="E:\projects\pp\post-es\src\shared\config\routeConfig\lib\routeConfig.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="15" count="1" type="stmt"/>
+    <package name="shared.config.locales.lib">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="locales.ts" path="D:\projects\pp\post-es\src\shared\config\locales\lib\locales.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.lib.classNames">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\lib\classNames\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\lib\classNames\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.lib.classNames.lib">
-      <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
-      <file name="classNames.ts" path="E:\projects\pp\post-es\src\shared\lib\classNames\lib\classNames.ts">
-        <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="5"/>
-        <line num="4" count="24" type="stmt"/>
-        <line num="7" count="48" type="cond" truecount="1" falsecount="1"/>
-        <line num="9" count="48" type="cond" truecount="2" falsecount="0"/>
-        <line num="11" count="24" type="stmt"/>
-        <line num="12" count="34" type="stmt"/>
-        <line num="13" count="16" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="18" count="48" type="stmt"/>
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+      <file name="classNames.ts" path="D:\projects\pp\post-es\src\shared\lib\classNames\lib\classNames.ts">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="5" coveredmethods="5"/>
+        <line num="4" count="39" type="stmt"/>
+        <line num="7" count="77" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="76" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="39" type="stmt"/>
+        <line num="12" count="72" type="stmt"/>
+        <line num="13" count="34" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="18" count="77" type="stmt"/>
       </file>
     </package>
     <package name="shared.lib.firstLetterCapitalize">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\lib\firstLetterCapitalize\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\lib\firstLetterCapitalize\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.lib.firstLetterCapitalize.lib">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="firstLetterCapitalize.ts" path="E:\projects\pp\post-es\src\shared\lib\firstLetterCapitalize\lib\firstLetterCapitalize.ts">
+      <file name="firstLetterCapitalize.ts" path="D:\projects\pp\post-es\src\shared\lib\firstLetterCapitalize\lib\firstLetterCapitalize.ts">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="2" count="18" type="stmt"/>
+        <line num="2" count="16" type="stmt"/>
       </file>
     </package>
     <package name="shared.lib.renderWithTranslations">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\lib\renderWithTranslations\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\lib\renderWithTranslations\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.lib.renderWithTranslations.lib">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="renderWithTranslations.tsx" path="E:\projects\pp\post-es\src\shared\lib\renderWithTranslations\lib\renderWithTranslations.tsx">
+      <file name="renderWithTranslations.tsx" path="D:\projects\pp\post-es\src\shared\lib\renderWithTranslations\lib\renderWithTranslations.tsx">
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="2" type="stmt"/>
       </file>
     </package>
+    <package name="shared.ui.Button.ui">
+      <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="Button.interface.ts" path="D:\projects\pp\post-es\src\shared\ui\Button\ui\Button.interface.ts">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="Button.tsx" path="D:\projects\pp\post-es\src\shared\ui\Button\ui\Button.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+      </file>
+    </package>
     <package name="shared.ui.LanguageSwitcher">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\ui\LanguageSwitcher\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\ui\LanguageSwitcher\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.ui.LanguageSwitcher.ui">
-      <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
-      <file name="LanguageSwitcher.tsx" path="E:\projects\pp\post-es\src\shared\ui\LanguageSwitcher\ui\LanguageSwitcher.tsx">
-        <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="2"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="15" count="10" type="stmt"/>
-        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
-      </file>
-    </package>
-    <package name="shared.ui.Logo">
-      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\ui\Logo\index.ts">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="shared.ui.Logo.ui">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="Logo.tsx" path="E:\projects\pp\post-es\src\shared\ui\Logo\ui\Logo.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="4" type="stmt"/>
+      <metrics statements="6" coveredstatements="5" conditionals="7" coveredconditionals="4" methods="3" coveredmethods="2"/>
+      <file name="LanguageSwitcher.tsx" path="D:\projects\pp\post-es\src\shared\ui\LanguageSwitcher\ui\LanguageSwitcher.tsx">
+        <metrics statements="6" coveredstatements="5" conditionals="7" coveredconditionals="4" methods="3" coveredmethods="2"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="23" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="37" count="6" type="stmt"/>
       </file>
     </package>
     <package name="shared.ui.ThemeSwitcher">
       <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="index.ts" path="E:\projects\pp\post-es\src\shared\ui\ThemeSwitcher\index.ts">
+      <file name="index.ts" path="D:\projects\pp\post-es\src\shared\ui\ThemeSwitcher\index.ts">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="shared.ui.ThemeSwitcher.ui">
+      <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="ThemeSwitcher.tsx" path="D:\projects\pp\post-es\src\shared\ui\ThemeSwitcher\ui\ThemeSwitcher.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="widgets.SideBar.ui.Sidebar">
+      <metrics statements="18" coveredstatements="13" conditionals="10" coveredconditionals="4" methods="8" coveredmethods="5"/>
+      <file name="Sidebar.tsx" path="D:\projects\pp\post-es\src\widgets\SideBar\ui\Sidebar\Sidebar.tsx">
+        <metrics statements="18" coveredstatements="13" conditionals="10" coveredconditionals="4" methods="8" coveredmethods="5"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="15" count="5" type="stmt"/>
+        <line num="16" count="5" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
+      </file>
+    </package>
+    <package name="widgets.SideBar.ui.SidebarContent">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="ThemeSwitcher.tsx" path="E:\projects\pp\post-es\src\shared\ui\ThemeSwitcher\ui\ThemeSwitcher.tsx">
+      <file name="SidebarContent.tsx" path="D:\projects\pp\post-es\src\widgets\SideBar\ui\SidebarContent\SidebarContent.tsx">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="5" type="stmt"/>
         <line num="12" count="5" type="stmt"/>
         <line num="13" count="5" type="stmt"/>
-      </file>
-    </package>
-    <package name="widgets.SideBar.ui.Sidebar">
-      <metrics statements="8" coveredstatements="6" conditionals="8" coveredconditionals="4" methods="5" coveredmethods="3"/>
-      <file name="Sidebar.tsx" path="E:\projects\pp\post-es\src\widgets\SideBar\ui\Sidebar\Sidebar.tsx">
-        <metrics statements="8" coveredstatements="6" conditionals="8" coveredconditionals="4" methods="5" coveredmethods="3"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="14" count="5" type="stmt"/>
-        <line num="16" count="5" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="34" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
-      </file>
-    </package>
-    <package name="widgets.SideBar.ui.SidebarContent">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="SidebarContent.tsx" path="E:\projects\pp\post-es\src\widgets\SideBar\ui\SidebarContent\SidebarContent.tsx">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="5" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="12" count="5" type="stmt"/>
       </file>
     </package>
   </project>

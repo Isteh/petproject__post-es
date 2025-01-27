@@ -50,14 +50,19 @@ const Sidebar: FC<ISidebarProps> = ({ className }) => {
         onMouseLeave={() => sidebarCollapsed && setButtonShow(false)}
       >
         {sidebarCollapsed ? (
-          <span className={GLOBAL_CSS_CLASSES.HIDDEN}>{t('show sidebar')}</span>
+          <>
+            <span className={GLOBAL_CSS_CLASSES.HIDDEN}>
+              {t('show sidebar')}
+            </span>
+            &gt;&gt;
+          </>
         ) : (
           firstLetterCapitalize(t('hide sidebar'))
         )}
       </button>
 
       <div className={styles.content}>
-        <SidebarContent />
+        <SidebarContent collapsed={sidebarCollapsed} />
       </div>
     </aside>
   );

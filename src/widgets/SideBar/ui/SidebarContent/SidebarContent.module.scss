@@ -15,4 +15,12 @@
   align-self: center;
   font: var(--font-s);
   color: var(--text-secondary-color);
+  text-wrap: nowrap;
+  transition: max-height 0.2s ease-in-out;
+  max-height: rem(50);
+}
+
+.themeText.hidden {
+  max-height: 0;
+  color: transparent;
 }

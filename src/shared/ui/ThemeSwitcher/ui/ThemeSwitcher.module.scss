@@ -27,3 +27,12 @@
     transform: translateX(rem(45));
   }
 }
+
+.collapsed {
+  border-radius: none;
+  background-color: var(--bg-secondary-color);
+
+  &::after {
+    background-color: var(--bg-inverted-secondary-color);
+  }
+}

@@ -5,16 +5,28 @@ import { useTheme } from 'app/providers/ThemeProvider';
 import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
 import { LanguageSwitcher } from 'shared/ui/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import { classNames } from 'shared/lib/classNames';
 
-const SidebarContent: FC = () => {
-    const { theme } = useTheme();
-    const { t } = useTranslation();
-    return <>
-        <span className={styles.bottomSection} />
-        <LanguageSwitcher className={styles.languageSwitcher} />
-        <ThemeSwitcher className={styles.themeSwitcher} />
-        <span className={styles.themeText}>{firstLetterCapitalize(t(`${theme} theme`))}</span>
-    </>;
+const SidebarContent: FC<{ collapsed: boolean }> = ({ collapsed }) => {
+  const { theme } = useTheme();
+  const { t } = useTranslation();
+  return (
+    <>
+      <span className={styles.bottomSection} />
+      <LanguageSwitcher
+        collapsed={collapsed}
+        className={styles.languageSwitcher}
+      />
+      <ThemeSwitcher className={styles.themeSwitcher} collapsed={collapsed} />
+      <span
+        className={classNames(styles.themeText, {
+          [styles.hidden]: collapsed,
+        })}
+      >
+        {firstLetterCapitalize(t(`${theme} theme`))}
+      </span>
+    </>
+  );
 };
 
 export default SidebarContent;
