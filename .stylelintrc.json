@@ -7,6 +7,7 @@
     "number-max-precision": [5,
       {"ignoreUnits": ["vw","%"]}
     ],
-    "media-feature-range-notation": "prefix"
+    "media-feature-range-notation": "prefix",
+    "alpha-value-notation":"number"
   }
 }

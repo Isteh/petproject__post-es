@@ -1,4 +1,4 @@
-import { FC, Suspense } from 'react';
+import { FC, Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames';
 import { useTheme } from 'app/providers/ThemeProvider';
 import { AppRouter } from 'app/providers/router';
@@ -9,6 +9,10 @@ import { Loader } from 'shared/ui/Loader';
 
 const App: FC = () => {
   const { theme } = useTheme();
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <div className={classNames('app', theme)}>

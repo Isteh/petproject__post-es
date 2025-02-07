@@ -4,7 +4,7 @@ import globals from 'globals';
 import react from 'eslint-plugin-react';
 import jest from 'eslint-plugin-jest';
 import i18next from 'eslint-plugin-i18next';
-
+import reactHooks from 'eslint-plugin-react-hooks';
 import path from 'path';
 import { fileURLToPath } from 'url';
 // import { FlatCompat } from '@eslint/eslintrc';
@@ -23,7 +23,7 @@ export default [
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],
   {
-    plugins: { i18next, jest },
+    plugins: { i18next, jest, 'react-hooks': reactHooks },
     rules: {
       ...jest.configs.recommended.rules,
     },
@@ -39,6 +39,9 @@ export default [
     rules: {
       'react/prop-types': 0,
       semi: 2,
+      'jsx-a11y/no-static-element-interactions': 'off',
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'error',
     },
   },
   {
