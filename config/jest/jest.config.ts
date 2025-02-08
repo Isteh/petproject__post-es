@@ -30,7 +30,7 @@ const config: Config = {
     '\\.(s?css)$': 'identity-obj-proxy',
     '\\.svg': path.resolve(__dirname, 'JestEmptyComponent.tsx'),
   },
-
+  globals: { __IS_DEV: true },
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 

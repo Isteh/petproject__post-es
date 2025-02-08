@@ -9,7 +9,7 @@ import {
 import styles from './Modal.module.scss';
 import { IModalProps } from './Modal.interface';
 import { classNames } from 'shared/lib/classNames';
-import { Portal } from 'shared/Portal';
+import { Portal } from 'shared/ui/Portal';
 import { GLOBAL_CSS_CLASSES } from 'app/styles/globalClasses';
 import { useTranslation } from 'react-i18next';
 

@@ -7,10 +7,15 @@ import SidebarContent from '../SidebarContent/SidebarContent';
 import { useTranslation } from 'react-i18next';
 import { firstLetterCapitalize } from 'shared/lib/firstLetterCapitalize';
 import { GLOBAL_CSS_VARIABLES } from 'app/styles/globalCssVariables';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  apperanceActions,
+  getApperanceIsSidebarCollapsed,
+} from 'entities/Apperance';
 
 const Sidebar: FC<ISidebarProps> = ({ className }) => {
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
-  const [buttonShow, setButtonShow] = useState(false);
+  const sidebarCollapsed = useSelector(getApperanceIsSidebarCollapsed);
+  const dispatch = useDispatch();
   const [isTopOfPage, setisTopOfPage] = useState(true);
   const { t } = useTranslation();
   useEffect(() => {
@@ -40,14 +45,10 @@ const Sidebar: FC<ISidebarProps> = ({ className }) => {
       <button
         data-testid="sidebar--toggler"
         className={classNames(styles.toggler, {
-          [styles.show]: buttonShow,
           [styles.topLocation]: !isTopOfPage,
         })}
         title={sidebarCollapsed ? t('show sidebar') : t('hide sidebar')}
-        onClick={() => setSidebarCollapsed((prev) => !prev)}
-        // shows/hides the button in collapsed mode
-        onMouseEnter={() => sidebarCollapsed && setButtonShow(true)}
-        onMouseLeave={() => sidebarCollapsed && setButtonShow(false)}
+        onClick={() => dispatch(apperanceActions.sidebarCollapsedToggle())}
       >
         {sidebarCollapsed ? (
           <>
