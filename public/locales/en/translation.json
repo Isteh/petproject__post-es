@@ -10,5 +10,9 @@
   "something went wrong": "something went wrong",
   "refresh page": "refresh page",
   "go back": "go back",
-  "close modal window": "close modal window"
+  "close modal window": "close modal window",
+  "name": "name",
+  "login": "login",
+  "submit": "submit",
+  "password": "password"
 }

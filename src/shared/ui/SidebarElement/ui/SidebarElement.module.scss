@@ -1,0 +1,36 @@
+.element {
+  display: flex;
+  gap: rem(10);
+  align-items: center;
+  border-radius: var(--main-border-radius);
+  padding: rem(5);
+}
+
+.icon {
+  width: rem(30);
+  height: auto;
+
+  fill: var(--text-main-color);
+}
+
+.element:hover {
+  cursor: pointer;
+  background-color: var(--bg-main-color);
+
+  & .icon {
+    fill: var(--bg-primary-color);
+  }
+
+  & .title {
+    color: var(--bg-primary-color);
+  }
+}
+
+.collapsed {
+  justify-content: center;
+  align-items: center;
+  margin: 0 rem(5);
+  aspect-ratio: 1/1;
+  padding: 0;
+  max-width: rem(40);
+}

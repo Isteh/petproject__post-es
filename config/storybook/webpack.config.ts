@@ -23,6 +23,7 @@ export default ({
     return rule;
   });
 
+  config.plugins.push(new webpack.DefinePlugin({ __IS_DEV: false }));
   config.module.rules.push(sassLoader(true), svgLoader);
   config.resolve.modules.push(paths.src);
   config.resolve.extensions.push('.tsx', '.ts', '.js');

@@ -1,4 +1,4 @@
 import Button from './ui/Button';
-import { BUTTON_THEMES } from './ui/Button.interface';
+import { BUTTON_THEMES, BUTTON_SIZES } from './ui/Button.interface';
 
-export { Button, BUTTON_THEMES };
+export { Button, BUTTON_THEMES, BUTTON_SIZES };

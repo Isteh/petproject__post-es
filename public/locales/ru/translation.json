@@ -11,5 +11,9 @@
   "refresh page": "обновить страницу",
   "go back": "назад",
   "show": "показать",
-  "close modal window": ""
+  "close modal window": "",
+  "name": "имя",
+  "login": "вход",
+  "submit": "отправить",
+  "password": "пароль"
 }

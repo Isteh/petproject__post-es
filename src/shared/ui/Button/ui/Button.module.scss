@@ -42,18 +42,18 @@
   padding: rem(10) rem(20);
   font-size: var(--font-size-m);
 
-  border-radius: rem(30);
+  border-radius: var(--main-border-radius);
 }
 
 .small_size {
   padding: rem(6) rem(14);
   font-size: var(--font-size-s);
 
-  border-radius: rem(20);
+  border-radius: calc(var(--main-border-radius) - rem(5));
 }
 
 .big_size {
   padding: rem(15) rem(40);
   font-size: var(--font-size-m);
-  border-radius: rem(40);
+  border-radius: calc(var(--main-border-radius) + rem(5));
 }

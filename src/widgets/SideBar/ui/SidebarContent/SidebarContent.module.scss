@@ -1,3 +1,13 @@
+.topSection,
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.topSection {
+  gap: rem(10);
+}
+
 .bottomSection {
   margin-top: auto;
 }

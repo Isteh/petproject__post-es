@@ -1,0 +1,11 @@
+.label {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: rem(10);
+  align-items: center;
+}
+
+.text {
+  display: block;
+  padding: rem(5) 0;
+}
